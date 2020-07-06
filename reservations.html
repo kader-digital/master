@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>|Reservations|</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+
+	</head>
+	<body>
+		<div class="body-container">
+			<script src="selection.js" ></script>
+			<header>
+				<div class="header-container">
+					<h1 id="main-header">1701 Locust Street</h1>
+				</div>
+			</header>
+			<form method="post" action="action.php">
+				<div class="reservations promo-list">
+				<fieldset id="fieldset">
+					<button onclick="window.close()">X</button>
+					<legend>reservation books</legend>
+					<br>
+					<label for="fullname">Name: </label>
+					<br>
+					<input type="text" id="fullname" name="fullname">
+					<br>
+					<br>
+					<label for="tel">Phone: </label>
+					<br>
+					<input id="tel" type="tel" name="tel">
+					<br>
+					<br>
+					<label for="day">Day: </label>
+					<br>
+					<input id="day" type="date" name="day">
+					<br>
+					<br>
+					<label for="time"></label>
+					<select id="time">
+                        <script type="text/javascript">
+                                
+                                var inters = ['00', '15', '30', '45'];
+                                for (var i = 5; i < 11; i++) {
+
+                                        for (var j = 0; j < 4; j++) {
+                                            document.write("<option id="+i+">"+i+':'+inters[j]+"</option>");
+                                        }
+                                }
+                        </script>
+					</select>
+					<br>
+					<br>
+					<label for="res-notes">Notes: </label>
+					<br>
+					<br>
+					<textarea cols="26" rows="6" id="res-notes" placeholder="please let us know of any allergies in advance!!"></textarea>
+					<br>
+					<br>
+					<input id="submit" type="submit" name="submit" value="submit">	
+				</form>
+			</div>
+			<h1 id="main-header">_ </h1>
+			<p>© 2020 1701 Seafood & Steaks llc</p>
+	</body>
+<html>

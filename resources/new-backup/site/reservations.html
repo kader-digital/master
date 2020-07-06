@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>|Reservations|</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+	<body>
+		<div class="body-container">
+			<form method="post" action="action.php">
+				<div class="reservations promo-list">
+				<fieldset>
+					<legend>reservation books</legend>
+					<br>
+					<label for="fullname">Name: </label>
+					<br>
+					<input type="text" id="fullname" name="fullname">
+					<br>
+					<br>
+					<label for="tel">Phone: </label>
+					<br>
+					<input id="tel" type="tel" name="tel">
+					<br>
+					<br>
+					<label for="day">Day: </label>
+					<br>
+					<input id="day" type="date" name="day">
+					<br>
+					<br>
+					<label for="time"></label>
+					<select id="time">
+						<option>5:00</option>
+						<option>5:30</option>
+						<option>6:00</option>
+						<option>6:30</option>
+						<option>7:00</option>
+						<option>7:30</option>
+						<option>8:00</option>
+						<option>8:30</option> 
+						<option>9:00</option>
+						<option>9:30</option>
+						<option>10:00</option>
+					</select>
+					<br>
+					<br>
+					<label for="res-notes">Notes: </label>
+					<textarea cols="26" rows="6" id="res-notes" placeholder="please let us know of any allergies in advance!!"></textarea>
+					<br>
+					<br>
+					<input id="submit" type="submit" name="submit" value="submit">	
+				</form>
+			</div>
+	</body>
+<html>

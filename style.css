@@ -1,0 +1,228 @@
+* {
+
+	font-family: Arial;
+	background-color: brown;
+	border-color: brown;
+	border-opacity: 50%;
+	border-width: 0px 0px 0px 0px;
+	border-radius: 3px;
+	color: black;
+	margin: 0;
+
+}
+
+h1, h2 {
+
+	padding-left: 4px;
+	padding-right: 4px;
+
+}
+
+#main-header {
+
+	background-color: black;
+	margin: 0 0 0 0;
+	padding: 0 9 9 9;
+	color: orange;
+	opacity: 50%;
+	text-decoration: none;
+
+}
+
+.body-container {
+
+	margin: 5px auto 5px auto;
+	padding: 2px;
+	border-style: groove;
+	border-width: 0px 0px 0px 0px;
+	border-color: brown;
+	width: 790px;
+	height: 720px;
+
+}
+
+img.table-image {
+
+	width: 780px;
+	height: auto;
+	margin-bottom: 10px;
+
+}
+
+img.lower-table-image {
+
+	width: 154px;
+	height: auto;
+
+}
+
+
+td {
+	
+	display: inline-block;
+	float: left;
+	
+
+}
+
+li {
+	
+	display: inline;
+
+}
+
+legend {
+
+	color: orange;
+	font-weight: bold;
+	background-color: black;
+	border-radius: 4px;
+	padding: 2px 2px 2px 2px;
+	margin: 2px 2px 2px 2px;
+	opacity: 50%;
+
+}
+
+.footer-container {
+
+	margin-bottom: 10px;
+	margin-top: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	opacity: 30%;
+	float: right;
+	text-align: left;
+	content-align: left;
+	font-size: 80%;
+	margin-left: 0px;
+	margin-right: 0px;
+	padding-left: 0px;
+
+	background-color: black;
+	color: yellow;
+	width: 100%;
+
+
+}
+
+.footer-container ul li, .footer-container ul li a {
+
+	background-color: black;
+	margin-right: 5px;
+	float: right;
+	text-align: space-between;
+	color: yellow;
+
+}
+
+textarea {
+		
+	border: ridge 4px;
+	background-color: white;
+	content-align: center;
+	width: 175px;
+}
+
+input {
+
+	background-color: white;
+	border-style: double solid;
+	border-width: 2px;
+	border-radius: 4px;
+
+}
+
+.reservations {
+
+	border-style: double double double double;
+	border-weight: 2px 2px 2px 2px;
+	float: center;
+
+}
+
+#submit {
+
+	background-color: lightgray;
+
+}
+
+select {
+
+	display: block;
+	color: green;
+
+}
+
+#day {
+
+	width: 180px;
+
+}
+
+.promo-list {
+
+	width: 290px;
+	border-width: 2px 2px 2px 2px; 
+	border-style: double groove;
+	display: inline;
+	content-align: center;
+
+}
+
+ul li a {
+
+	text-decoration: none;
+
+}
+
+#top-menu {
+
+	padding: 3px 3px 3px 3px;
+	margin: 3px 3px 3px 3px;
+
+
+}
+
+ul li a:hover {
+
+	background-color: lightgray;
+	opacity: 66%;
+	border-radius: 3px;
+
+}
+
+.email-form {
+
+	float: right;
+	display: inline-block;
+	content-align: space-between;
+	width: inherit;
+
+
+}
+
+#email-header {
+
+	float: center;
+	text-align: left;
+	display: inline-block;
+	margin-top: 4px;
+	
+}
+
+#fieldset {
+
+	border-style: groove;
+	border-width: 2px 2px 2px 2px;
+	content-align: center;
+
+}
+
+p {
+
+	font-size: 60%;
+	opacity: 65%;
+	padding-right: 5px;
+	float: right;
+
+}

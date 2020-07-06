@@ -1,0 +1,111 @@
+* {
+
+	font-family: Arial;
+	background-color: darkgrey;
+	color: black;
+	margin: 0;
+
+}
+
+h1 {
+
+	border-radius: 3px;
+	margin: auto;
+}
+
+#main-header {
+
+	background-color: black;
+	margin: 0 0 0 0;
+	padding: 0 9 9 9;
+	color:orange;
+	opacity: 40%;
+
+}
+
+.body-container {
+
+	background-color: lightgrey;
+	margin: 5px auto 5px auto;
+	padding: 2px;
+	border-style: solid;
+	width: 900px;
+	height: 895px;
+
+}
+
+li {
+	
+	display: inline;
+
+}
+
+legend {
+
+	color: tomato;
+	font-weight: bold;
+	background-color: black;
+	border-radius: 3px;
+	opacity: 40%;
+
+}
+
+.footer-container {
+
+	position: fixed;
+	overflow: auto;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	margin-bottom: 0px;
+	text-align: left-justify;
+
+}
+
+
+
+textarea {
+		
+	border: ridge 4px;
+	background-color: white;
+}
+
+
+.reservations {
+
+	border-style: double groove;
+	border-width: 1px;
+	float: left;
+	width: 66%;
+	height: 38%;
+	display: inline;
+
+}
+
+#submit {float: left; background-color: lightgray;}
+
+select {
+
+    float: top;
+	display: block;
+	color: green;
+
+
+}
+
+#day {width: 175px;}
+
+
+.promo-list {
+
+	width: 31%;
+	height: 41%;
+	padding: 15px 5px 10px 5px;
+
+	border-style:double groove;
+	border-width: 1px;
+	text-align: left;
+	display: block;
+	content-align: center;
+	float: right;
+}
