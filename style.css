@@ -238,14 +238,17 @@ p {
 
 .dropdown:hover .dropdown-content {
 
-	display: block;
+	display: inline-block;
+	padding: 10px 10px 10px 10px;
+	margin: 10px 10px 10px 10px;
 	color: orange;
 
 }
 
-.dropdown:hover .dropdown-button {
+.dropdown:hover .dropdown-button, .dropdown:hover {
 
 	color: tomato;
+	padding: 10px 10px 10px 10px;
 
 }
 
@@ -296,6 +299,8 @@ a:hover {
 	color: tomato;
 	position: relative;
 	display: inline-block;
+	border-color: gray;
+	border-style: solid;
 
 }
 
