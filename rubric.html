@@ -33,21 +33,52 @@
 					</tr>
 					<tr>
 						<td>
-							<img class="lower-table-image" src="images/pr2.jpg" alt="picture one of five in queue">
+							<img id="first 2" class="lower-table-image" src="images/pr2.jpg" alt="picture one of five in queue">
 						</td>
 						<td>
-							<img class="lower-table-image" src="images/pr3.jpg" alt="picture two of five in queue">
+							<img class="lower-table-image" id="3" src="images/pr3.jpg" alt="picture two of five in queue">
 						</td>
 						<td>
-							<img class="lower-table-image" src="images/pr4.jpg" alt="picture three of five in queue">
+							<img class="lower-table-image" id="4" src="images/pr4.jpg" alt="picture three of five in queue">
 						</td>	
 						<td>
-							<img class="lower-table-image" src="images/pr5.jpg" alt="picture four of five in queue">
+							<img class="lower-table-image" id="5" src="images/pr5.jpg" alt="picture four of five in queue">
 						</td>
 						<td>
-							<img class="lower-table-image" src="images/pr6.jpg" alt="picture five of five in queue">
+							<img id="last 6" class="lower-table-image" src="images/pr6.jpg" alt="picture five of five in queue">
+						</td>
+						<td>
+							<img id="7" style="display:none;" class="lower-table-image" src="images/pr7.jpg" alt="picture six of five in queue">
 						</td>
 					</tr>
+					<script type="javascript">
+					
+						var firstImage = document.getElementById('first');	
+						var lastImage = document.getElementById('last');	
+						var hiddenImage = document.getElementById('7');
+
+
+						window.sleep(50);	
+						var hiddenRect = hiddenImage.getBoundingClientRect();
+						hiddenRect.x += 10
+						hiddenRect.y += 10
+
+						var lastRect = lastImage.getBoundingClientRect();
+						lastRect.x -= 10;
+						lastRect.y -= 10;
+
+						for (var i = 2; i < 8; i++) {
+						
+							var file = document.getElementbyId(i);
+							var fileRect = file.getBoundingClientRect(); 
+							fileRect.x += 10;
+							fileRect.y += 10;
+						
+						} 
+							
+
+					
+					</script>
 				</table>
 			</div>
 			<br>
