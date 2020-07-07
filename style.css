@@ -14,8 +14,8 @@
 
 h1, h2 {
 
-	padding-left: 4px;
-	padding-right: 4px;
+	padding-left: 29px;
+	padding-right: 29px;
 
 }
 
@@ -35,7 +35,7 @@ h1, h2 {
 #main-header {
 
 	background-color: black;
-	margin: 0 0 0 0;
+	margin: 9px 9px 9px 9px;
 	padding: 9px 9px 9px 9px;
 	color: orange;
 	text-decoration: none;
