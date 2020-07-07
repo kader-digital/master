@@ -36,6 +36,7 @@
 						
 							var d = new Date();
 							var month = d.getMonth() -1;
+							var startMonth = d.getMonth() - 1;
 							var mos = ['January','February','March','April','May','June','July','August','September','October','November','December'];
 							var displayMonth = mos[month++];			
 
@@ -45,14 +46,29 @@
 								document.write('<option value='+displayMonth+'>'+displayMonth+'</option>');
 							}
 							
-							
-						
 						</script>
 					</select>
 					<br>
 					<label for="day">Day: </label>
 					<select id="day" name="day">
 						<option id="today"value="today">(Today)</option>
+						<script type="text/javascript">
+						
+							var d = new Date();
+							var day = d.getDate();
+							var month = d.getMonth();
+
+							var dayMaxList = [31, 28, 30, 31, 30, 31, 30, 30, 31, 30, 31];
+							var max = dayMaxList[d.getMonth()]; 
+
+							for (var i = 0; i < max; i++) {
+							
+								document.write('<option>'+i+'</option>');
+							
+							}
+						
+						
+						</script>
 					</select>
 					<br>
 					<label for="time">Time: </label>
