@@ -30,55 +30,10 @@
 					<input id="tel" type="tel" name="tel">
 					<br>
 					<br>
-					<label for="months">Month: </label>
-					<select id="months" name="month">
-						<script type="text/javascript">
-						
-							var d = new Date();
-							var month = d.getMonth() -1;
-							var startMonth = d.getMonth() - 1;
-							var mos = ['January','February','March','April','May','June','July','August','September','October','November','December'];
-							var displayMonth = mos[month++];			
-
-							while (month < 12 ) {
-							
-								displayMonth = mos[month++];			
-								document.write('<option value='+displayMonth+'>'+displayMonth+'</option>');
-							}
-							
-						</script>
-					</select>
+					<label for="date">Date: </label>
 					<br>
-					<label for="day">Day: </label>
-					<select id="day" name="day">
-						<script type="text/javascript">
-						
-							var d = new Date();
-							var day = d.getDate();
-							var month = d.getMonth();
-
-							var dayMaxList = [31, 28, 30, 31, 30, 31, 30, 30, 31, 30, 31];
-							var max = dayMaxList[d.getMonth()-1]; 
-
-							for (var i = 1; i < max; i++) {
-
-								if (month >= d.getMonth()) {
-							
-									document.write('<option id='+i+'>'+i+'</option>');
-
-								}
-								if (i == d.getDate() && month == d.getMonth()) {
-								
-									document.write('<option>'+i+' (today) '+'</option>');
-								
-								}
-
-							
-							}
-						
-						
-						</script>
-					</select>
+					<input type="date" id ="date" placeholder="yyyy-mm-dd">
+					<br>
 					<br>
 					<label for="time">Time: </label>
 					<select id="time">
