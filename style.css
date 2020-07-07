@@ -224,6 +224,7 @@ p {
 .dropdown:hover .dropdown-content {
 
 	display: block;
+	color: orange;
 
 }
 
@@ -237,18 +238,27 @@ p {
 
 	display: none;
 	position: absolute;
+	opacity: 10%;
+	color: orange;
+	text-decoration: none;
 
 }
+
+
 
 .dropdown {
 
 	display: inline-block;
+	text-decoration: none;
+	float: left;
+	opacity: 50%;
+	color: orange;
 
 }
 
 
 
-
+a {text-decoration: none;}
 
 
 
