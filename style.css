@@ -18,11 +18,24 @@ h1, h2 {
 
 }
 
+.header-container {
+	
+	background-color: black;
+	color: orange;
+
+}
+
+.header-container:hover {
+	
+	color: tomato;
+
+}
+
 #main-header {
 
 	background-color: black;
 	margin: 0 0 0 0;
-	padding: 0 9 9 9;
+	padding: 9px 9px 9px 9px;
 	color: orange;
 	opacity: 50%;
 	text-decoration: none;
