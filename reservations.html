@@ -32,10 +32,34 @@
 					<br>
 					<label for="day">Day: </label>
 					<br>
-					<input id="day" type="date" name="day">
+					<select id="day" name="day">
+						<option id="today"value="today">Today
+							<script type="text/javascript">
+
+								var months = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
+								var d = new Date();
+								d = d.getMonth();
+								var nodays = months[d];
+								var d = new Date();
+								d = d.getDate();
+
+								var today = document.getElementById('today');
+								for (var i = d+1; i < nodays; i++) {
+								
+									document.write('<option>'+i+'</option>');
+
+
+								
+								}
+
+						
+							
+							</script>
+						</option>
+					</select>
 					<br>
 					<br>
-					<label for="time"></label>
+					<label for="time">Time: </label>
 					<select id="time">
                         <script type="text/javascript">
                                 
