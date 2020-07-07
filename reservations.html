@@ -73,11 +73,64 @@
 					<label for="time">Time: </label>
 					<select id="time">
                         <script type="text/javascript">
+
+								var d = new Date();
+								var currentHours = d.getHours(); 
+								var currentMins = d.getMinutes(); 
+								var j;
+								if (currentMins < 15) {
+								
+									j = 1;
+
+								
+								}
+
+								else if (currentMins < 30) { 
+
+									j = 2;
+
+								} 
+
+								else if (currentMins < 45) {
+								
+									j = 3;
+
+								
+								}
+
+								else {
+
+									j = 0;
+
+								}
+
+								var hrs = 5;
+								var close = d.getDate();
+
+								if (close == 5 || close == 6) {
+								
+									close = 11;
+								
+								}
+
+								else {
+								
+									close = 10;
+								
+								}
+
+								if (currentHours > 17 && currentHours < close) {
+								
+									hrs = currentHours;					
+									mins = currentMins;
+								
+								}
+
                                 
                                 var inters = ['00', '15', '30', '45'];
-                                for (var i = 5; i < 11; i++) {
+                                for (var i = hrs; i < 11; i++) {
 
-                                        for (var j = 0; j < 4; j++) {
+                                        for (j = 0; j < 4; j++) {
                                             document.write("<option id="+i+">"+i+':'+inters[j]+"</option>");
                                         }
                                 }
