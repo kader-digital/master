@@ -32,20 +32,19 @@
 					<br>
 					<label for="months">Month: </label>
 					<select id="months" name="month">
-						<option id="month" selected="selected"></option>
 						<script type="text/javascript">
 						
 							var d = new Date();
-							var month = d.getMonth() - 1;
-							var mos = ['January','February','March','April','June','July','August','September','October','November','December'];
+							var month = d.getMonth() -1;
+							var mos = ['January','February','March','April','May','June','July','August','September','October','November','December'];
+							var displayMonth = mos[month++];			
 
-							while (month+1 < 12) {
+							while (month < 12 ) {
 							
-								var displayMonth = mos[month++];			
-								document.createElement('option');
-								document.write('<option>'+displayMonth+'</option>');
+								displayMonth = mos[month++];			
+								document.write('<option value='+displayMonth+'>'+displayMonth+'</option>');
 							}
-
+							
 							
 						
 						</script>
