@@ -40,6 +40,13 @@
 							var mos = ['January','February','March','April','June','July','August','September','October','November','December'];
 							document.getElementById('month').textContent = mos[month];
 
+							while (month < 12) {
+							
+								var displayMonth = mos[month++];			
+								document.createElement('option');
+								document.write('<option>'+displayMonth+'</option>');
+							}
+
 							
 						
 						</script>
