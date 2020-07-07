@@ -60,19 +60,19 @@
 
 						window.sleep(50);	
 						var hiddenRect = hiddenImage.getBoundingClientRect();
-						hiddenRect.x += 10
-						hiddenRect.y += 10
+						hiddenRect.width += 10
+						hiddenRect.height += 10
 
 						var lastRect = lastImage.getBoundingClientRect();
-						lastRect.x -= 10;
-						lastRect.y -= 10;
+						lastRect.width -= 10;
+						lastRect.height -= 10;
 
 						for (var i = 2; i < 8; i++) {
 						
 							var file = document.getElementbyId(i);
 							var fileRect = file.getBoundingClientRect(); 
-							fileRect.x += 10;
-							fileRect.y += 10;
+							fileRect.width += 10;
+							fileRect.height += 10;
 						
 						} 
 							
@@ -98,7 +98,7 @@
         	<footer>
 				<div class="footer-container">
 					<ul>
-						<li><a href="directions.html">Directions</a></li>
+						<li><a href="https://www.google.com/maps/place/1701+Locust+St,+Philadelphia,+PA+19103/@39.9489851,-75.1717296,17z/data=!3m1!4b1!4m5!3m4!1s0x89c6c63a66bd44e7:0xd72d0ed777511ac9!8m2!3d39.9489851!4d-75.1695409" target="_blank">Directions</a></li>
 						<li><a href="privacy-policy.html">Privacy Policy</a></li>
 					</ul>
 				</div>
