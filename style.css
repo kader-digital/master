@@ -307,7 +307,11 @@ a:hover {
 
 }
 
+#closebtn:hover {
 
+	background-color: black;
+	color: orange;
+}
 
 
 
