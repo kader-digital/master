@@ -60,9 +60,19 @@
 							var dayMaxList = [31, 28, 30, 31, 30, 31, 30, 30, 31, 30, 31];
 							var max = dayMaxList[d.getMonth()-1]; 
 
-							for (var i = day; i < max; i++) {
+							for (var i = 1; i < max; i++) {
+
+								if (month >= d.getMonth()) {
 							
-								document.write('<option>'+i+'</option>');
+									document.write('<option id='+i+'>'+i+'</option>');
+
+								}
+								if (i == d.getDate() && month == d.getMonth()) {
+								
+									document.write('<option>'+i+' (today) '+'</option>');
+								
+								}
+
 							
 							}
 						
@@ -131,9 +141,10 @@
                                 for (var i = hrs; i < 11; i++) {
 
                                         for (j = 0; j < 4; j++) {
-                                            document.write("<option id="+i+">"+i+':'+inters[j]+"</option>");
+                                            document.write ("<option id="+i+">"+i+':'+inters[j]+"</option>");
                                         }
                                 }
+
                         </script>
 					</select>
 					<br>
