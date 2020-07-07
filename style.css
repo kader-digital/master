@@ -4,6 +4,7 @@
 	background-color: brown;
 	border-color: brown;
 	border-opacity: 40%;
+	box-shadow: 1px;
 	border-width: 0px 0px 0px 0px;
 	border-radius: 3px;
 	color: black;
@@ -95,7 +96,6 @@ legend {
 	border-radius: 4px;
 	padding: 2px 2px 2px 2px;
 	margin: 2px 2px 2px 2px;
-	opacity: 50%;
 
 }
 
