@@ -221,12 +221,35 @@ p {
 
 }
 
-#dropdown:hover {
+.dropdown:hover .dropdown-content {
 
-	display: inline;
+	display: block;
+
+}
+
+.dropdown:hover .dropdown-button {
+
+	color: orange;
+
+}
+
+.dropdown-content {
+
+	display: none;
 	position: absolute;
 
 }
+
+.dropdown {
+
+	display: inline-block;
+
+}
+
+
+
+
+
 
 
 
