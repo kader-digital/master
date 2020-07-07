@@ -37,7 +37,6 @@ h1, h2 {
 	margin: 0 0 0 0;
 	padding: 9px 9px 9px 9px;
 	color: orange;
-	opacity: 50%;
 	text-decoration: none;
 
 }
@@ -84,7 +83,7 @@ td {
 
 li {
 	
-	display: inline;
+	display: block;
 
 }
 
@@ -197,7 +196,6 @@ ul li a {
 ul li a:hover {
 
 	background-color: lightgray;
-	opacity: 66%;
 	border-radius: 3px;
 
 }
@@ -255,6 +253,7 @@ p {
 	
 	color: orange;
 	border-radius: 0px 0px 0px 0px;
+	opacity: 90%;
 	background-color: black;
 
 }
@@ -262,9 +261,10 @@ p {
 .dropdown-content {
 
 	display: none;
+	z-index: 10;
 	position: absolute;
-	opacity: 10%;
 	color: orange;
+	opacity: 90%;
 	text-decoration: none;
 	background-color: black;
 
