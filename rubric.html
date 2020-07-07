@@ -51,34 +51,6 @@
 							<img id="7" style="display:none;" class="lower-table-image" src="images/pr7.jpg" alt="picture six of five in queue">
 						</td>
 					</tr>
-					<script type="javascript">
-					
-						var firstImage = document.getElementById('first');	
-						var lastImage = document.getElementById('last');	
-						var hiddenImage = document.getElementById('7');
-
-
-						window.sleep(50);	
-						var hiddenRect = hiddenImage.getBoundingClientRect();
-						hiddenRect.width += 10
-						hiddenRect.height += 10
-
-						var lastRect = lastImage.getBoundingClientRect();
-						lastRect.width -= 10;
-						lastRect.height -= 10;
-
-						for (var i = 2; i < 8; i++) {
-						
-							var file = document.getElementbyId(i);
-							var fileRect = file.getBoundingClientRect(); 
-							fileRect.width += 10;
-							fileRect.height += 10;
-						
-						} 
-							
-
-					
-					</script>
 				</table>
 			</div>
 			<br>
@@ -90,7 +62,7 @@
 						<input id="fullname" type="text" class="fullname" name="fullname" maxlength="20" placeholder="Garth Weldon"> 
 						<label for="email">Email: </label>
 						<input id="email" type="email" class="email" maxlength="40" placeholder="contact@1701.email">
-						<input type="submit" value="submit" class="submit" name="submit" onclick="window.alert('we sent you an email just to be formal')">
+						<input type="submit" value="submit" class="submit" id="submit" name="submit">
 					</fieldset>
 			    </div>
 			</form>
