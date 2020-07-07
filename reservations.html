@@ -30,34 +30,25 @@
 					<input id="tel" type="tel" name="tel">
 					<br>
 					<br>
-					<label for="day">Day: </label>
-					<br>
-					<select id="day" name="day">
-						<option id="today"value="today">Today
-							<script type="text/javascript">
-
-								var months = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
-								var d = new Date();
-								d = d.getMonth();
-								var nodays = months[d];
-								var d = new Date();
-								d = d.getDate();
-
-								var today = document.getElementById('today');
-								for (var i = d+1; i < nodays; i++) {
-								
-									document.write('<option>'+i+'</option>');
-
-
-								
-								}
-
+					<label for="months">Month: </label>
+					<select id="months" name="month">
+						<option id="month" selected="selected">a</option>
+						<script type="text/javascript">
 						
+							var d = new Date();
+							var month = d.getMonth() - 1;
+							var mos = ['January','February','March','April','June','July','August','September','October','November','December'];
+							document.getElementById('month').textContent = mos[month];
 							
-							</script>
-						</option>
+						
+						</script>
+						<option></option>
 					</select>
 					<br>
+					<label for="day">Day: </label>
+					<select id="day" name="day">
+						<option id="today"value="today">(Today)</option>
+					</select>
 					<br>
 					<label for="time">Time: </label>
 					<select id="time">
@@ -72,7 +63,6 @@
                                 }
                         </script>
 					</select>
-					<br>
 					<br>
 					<label for="res-notes">Notes: </label>
 					<br>
