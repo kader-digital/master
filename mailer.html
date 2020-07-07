@@ -21,7 +21,7 @@
 
                     </script>
 					<fieldset id="fieldset">
-						<button onclick="window.close()">X</button>
+						<button onclick="window.alert('we sent you an email just to confirm.'); window.close();">X</button>
 						<legend>online mailer</legend>
 						<br>
 						<label for="fullname">Name: </label>
@@ -45,7 +45,7 @@
 						<textarea rows="6" id="message" cols="27" placeholder="Allergies, Preferences, special occasions..."></textarea>
 						<br>
 						<br>
-                        <input type="submit" value="submit" name="submit" id="submit">
+                        <input type="submit" value="submit" name="submit" id="submit" onclick="window.alert('Thanks! we sent you an email just to be formal'); window.close()">
 					</fieldset>
 			    </div>
 			</form>
