@@ -248,10 +248,11 @@ p {
 
 }
 
-.dropdown:hover .dropdown-button, .dropdown:hover {
+ #header-container, .dropdown:hover .dropdown-button, .dropdown:hover {
 
 	color: tomato;
-	padding: 10px 10px 10px 10px;
+	position: fixed;
+	float: left;
 
 }
 
@@ -294,15 +295,19 @@ a {
 	text-decoration: none;
 	color: orange;
 	background-color: black;
+	display: block;
+	position: relative;
 
 }
 
 a:hover {
 
 	color: tomato;
-	position: relative;
-	display: inline-block;
+	position: relative; 
+	display: inline;
 	border-color: gray;
+	margin-left: 0px;
+	padding-left: 0px;
 	border-style: solid;
 
 }
@@ -313,7 +318,7 @@ a:hover {
 	color: orange;
 }
 
-#losebtn {
+#closebtn {
 
 	background-color: lightgrey;
 	color: orange;
