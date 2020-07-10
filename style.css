@@ -248,11 +248,17 @@ p {
 
 }
 
- #header-container, .dropdown:hover .dropdown-button, .dropdown:hover {
+ .dropdown:hover  {
 
 	color: tomato;
-	position: fixed;
-	float: left;
+	position: relative;
+	display: block;
+	border-width: 2px;
+	border-style: solid;
+	border-color: grey;
+	opacity: 80%;
+	margin: 5px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
 
 }
 
@@ -262,13 +268,13 @@ p {
 	border-radius: 0px 0px 0px 0px;
 	opacity: 90%;
 	background-color: black;
+	display: inline-block;
 
 }
 
 .dropdown-content {
 
 	display: none;
-	z-index: 10;
 	position: absolute;
 	color: orange;
 	opacity: 90%;
@@ -280,12 +286,13 @@ p {
 
 .dropdown {
 
-	display: inline-block;
+	display: block;
 	position: relative;
 	background-color: black;
 	text-decoration: none;
 	float: left;
 	color: orange;
+	border-style: solid;
 
 }
 
@@ -305,10 +312,8 @@ a:hover {
 	color: tomato;
 	position: relative; 
 	display: inline;
-	border-color: gray;
 	margin-left: 0px;
 	padding-left: 0px;
-	border-style: solid;
 
 }
 
@@ -316,6 +321,8 @@ a:hover {
 
 	background-color: black;
 	color: orange;
+	z-index: -1;
+
 }
 
 #closebtn {
