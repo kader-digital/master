@@ -7,23 +7,29 @@
 	</head>
 	<body>
 		<div class="body-container">
-			<img name="slide" src="pr.jpg" id='img' alt="test image. piece of prime rib.">
-			<script type="text/javascript">
+			<img name="slide" src="images/pr1.jpg" width="990px" id='img' alt="test image. piece of prime rib.">
+			<script type="text/css">
 				
-				let slideshow[0] = 'images/pr.jpg'; 
-				let i = 0;
-				let time = 2000;
+				var slideshow = []; 
+				var i = 0;
+				var time = 2000;
 
-				// append 10 more images to the slideshow
-				for (var i = 1; i < 11; i++) {
-					slideshow[i-1].split('.')[0].append(i);
-				}
+				// add to the slideshow array to make a list of iterable images
 
-				function changeImage (img) {
+				slideshow[0] = 'images/pr1.jpg';
+				slideshow[1] = 'images/pr2.jpg';
+				slideshow[2] = 'images/pr3.jpg';
+				slideshow[3] = 'images/pr4.jpg';
+
+
+				function changeImage () {
+
 					document.slide.src = slideshow[i];				
-					if (i < images.length - 1 ) {
+
+					if (i < slideshow.length - 1 ) {
 						i++;	
 					}
+
 					else {
 						i = 0;
 					}
@@ -32,8 +38,7 @@
 
 				}	
 
-				window.onLoad = changeImage;
-
+				window.onload = changeImage;
 
 			</script>
 		</div>
