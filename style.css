@@ -243,7 +243,13 @@ p {
 
 	display: inline-block;
 	color: orange;
-	padding: 15px 5px 15px 5px;
+	padding: 7px;
+	margin: 3px;
+	opacity: .7;
+	border-style: groove;
+	border-radius: 1px;
+	border-width: 1px;
+
 
 }
 
@@ -252,12 +258,12 @@ p {
 	color: tomato;
 	position: relative;
 	display: block;
-	border-width: 2px;
-	opacity: 80%;
+	opacity: 90%;
 	margin: 0px 0px 0px 0px;
 	padding: 0px 0px 0px 0px;
 
 }
+
 
 .dropdown-button { 
 	
@@ -276,7 +282,9 @@ p {
 	color: orange;
 	opacity: 90%;
 	text-decoration: none;
-	background-color: black;
+	padding: 0px 0px 0px 0px;
+	margin: 0px 5px 10px 5px;
+	border-width: 1px;
 
 }
 
@@ -289,6 +297,7 @@ p {
 	text-decoration: none;
 	float: left;
 	color: orange;
+	border-width: 1px;
 
 }
 
@@ -300,6 +309,7 @@ a {
 	background-color: black;
 	display: block;
 	position: relative;
+	border-radius: 0px;
 
 }
 
@@ -308,8 +318,6 @@ a:hover {
 	color: tomato;
 	position: relative; 
 	display: block;
-	margin-left: auto;
-	padding-left: 0px;
 	margin-right: auto;
 	margin-left: auto;
 
