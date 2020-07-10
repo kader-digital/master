@@ -241,15 +241,15 @@ p {
 
 .dropdown:hover .dropdown-content, .dropdown-content:hover {
 
-	display: inline-block;
+	display: block;
 	color: orange;
 	padding: 6px;
-	border-width: 0px 0px 0px 0px;
-	margin: 3px;
-	opacity: .5;
+	border-width: 2px 2px 2px 2px;
+	margin: 1px;
+	opacity: 1.0;
 	border-style: groove;
-	border-radius: 1px;
-	padding-top: 8px;
+	border-radius: 3px 3px 3px 3px;
+	padding-top: 6px;
 	margin-left: 0px;
 	padding-left: 0px;
 	padding-bottom: 0px;
@@ -264,7 +264,7 @@ p {
 	color: tomato;
 	position: relative;
 	display: block;
-	opacity: 90%;
+	opacity: 100%;
 	margin: 0px 0px 0px 0px;
 	padding: 0px 0px 0px 0px;
 
@@ -336,6 +336,7 @@ a:hover {
 	padding-right: 0px;
 	border-width: 0px;
 	border-radius: 0px;
+	font-style: italic;
 
 }
 
