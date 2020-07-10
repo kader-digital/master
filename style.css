@@ -243,6 +243,7 @@ p {
 
 	display: inline-block;
 	color: orange;
+	padding: 15px 5px 15px 5px;
 
 }
 
@@ -307,8 +308,10 @@ a:hover {
 	color: tomato;
 	position: relative; 
 	display: block;
-	margin-left: 0px;
+	margin-left: auto;
 	padding-left: 0px;
+	margin-right: auto;
+	margin-left: auto;
 
 }
 
