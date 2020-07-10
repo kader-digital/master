@@ -252,7 +252,6 @@ p {
 	position: relative;
 	display: block;
 	border-width: 2px;
-	border-style: solid;
 	opacity: 80%;
 	margin: 0px 0px 0px 0px;
 	padding: 0px 0px 0px 0px;
@@ -261,7 +260,7 @@ p {
 
 .dropdown-button { 
 	
-	color: orange;
+	color: tomato;
 	border-radius: 0px 0px 0px 0px;
 	opacity: 90%;
 	background-color: black;
