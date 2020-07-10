@@ -253,7 +253,6 @@ p {
 	display: block;
 	border-width: 2px;
 	border-style: solid;
-	border-color: grey;
 	opacity: 80%;
 	margin: 0px 0px 0px 0px;
 	padding: 0px 0px 0px 0px;
@@ -290,7 +289,6 @@ p {
 	text-decoration: none;
 	float: left;
 	color: orange;
-	border-style: solid;
 
 }
 
