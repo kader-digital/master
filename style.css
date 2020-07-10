@@ -239,11 +239,9 @@ p {
 
 }
 
-.dropdown:hover .dropdown-content {
+.dropdown:hover .dropdown-content, .dropdown-content:hover {
 
 	display: inline-block;
-	padding: 10px 10px 10px 10px;
-	margin: 10px 10px 10px 10px;
 	color: orange;
 
 }
@@ -257,7 +255,7 @@ p {
 	border-style: solid;
 	border-color: grey;
 	opacity: 80%;
-	margin: 5px 0px 0px 0px;
+	margin: 0px 0px 0px 0px;
 	padding: 0px 0px 0px 0px;
 
 }
