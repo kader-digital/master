@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>imgtest!</title>
+		<meta http-equiv="Kader Arnold">
+	</head>
+	<body>
+		<div class="body-container">
+			<img name="slide" src="pr.jpg" id='img' alt="test image. piece of prime rib.">
+			<script type="text/javascript">
+				
+				let slideshow[0] = 'images/pr.jpg'; 
+				let i = 0;
+				let time = 2000;
+
+				// append 10 more images to the slideshow
+				for (var i = 1; i < 11; i++) {
+					slideshow[i-1].split('.')[0].append(i);
+				}
+
+				function changeImage (img) {
+					document.slide.src = slideshow[i];				
+					if (i < images.length - 1 ) {
+						i++;	
+					}
+					else {
+						i = 0;
+					}
+
+					setTimeout("changeImage()",time);
+
+				}	
+
+				window.onLoad = changeImage;
+
+
+			</script>
+		</div>
+	</body>
+</html>
