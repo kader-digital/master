@@ -59,17 +59,19 @@
 			<br>
 			<form method="post" action="">
 				<?php 
-				
-				    if (isset($_post['submit'])) {
 
-				        import "email-submit.php";
 
-					    $email = $_POST['email'];
-					    $fullname = $_POST['fullname'];
+					import 'connection.php';
+					import 'close.php';
 
-					    connect();
-					    insertValues($email, $fullname);
-					    close();
+				    if (isset($_POST['submit'])) {
+
+					   $email = $_POST['email'];
+					   $fullname = $_POST['fullname'];
+
+					   connect();
+					   insertValues($email,$fullname);
+					   close();
 				   
 				   }
 							

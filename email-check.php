@@ -5,10 +5,10 @@
 
 		$username = 'kader';
 		$password = 'kader';
-		$hostname = 'localhost';
+		$hostname = '';
 		$dbname = 'db';
 
-		$link = new mysqli($serveraddr,$username,$password,$dbname);
+		$link = new mysqli($hostname,$username,$password,$dbname);
 
 		if ($link->connect_error) {
 		
@@ -49,8 +49,8 @@
 
 	function insertValues ($email, $fullname) {	
 	
-		$sql = "INSERT INTO customers ('fullname', 'email')
-		VALUES(".$email.",".$fullname".)";	
+		$sql = "INSERT INTO customer ('fullname', 'email')
+		VALUES(".$fullname.",".$email".)";	
 		return $link->query($sql);
 
 

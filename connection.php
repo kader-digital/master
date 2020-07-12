@@ -4,7 +4,7 @@
 
 		$username = 'kader';
 		$password = 'kader';
-		$hostname = 'localhost';
+		$hostname = 'Kaders-MacBook-Air.local';
 		$dbname = 'db';
 
 		$link = new mysqli($serveraddr,$username,$password,$dbname);
