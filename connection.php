@@ -1,22 +1,27 @@
 <?php 
 
-	$username = 'kader';
-	$password = 'kader';
-	$hostname = 'localhost';
-	$dbname = 'visitors';
+	function connect () {
 
-	$link = new mysqli($serveraddr,$username,$password,$dbname);
+		$username = 'kader';
+		$password = 'kader';
+		$hostname = 'localhost';
+		$dbname = 'db';
 
-	if (!$link) {
-	
-		echo "<script type='text/javascript'>document.alert('coulnd establish a connection with mysql...');</script";	
-	
-	}
-	else {
+		$link = new mysqli($serveraddr,$username,$password,$dbname);
 
-		echo "<script type='text/javascript'>document.alert(mysqli_get_host_info($link);</script>";
-	
-	
+		if (!$link) {
+		
+			echo "<script type='text/javascript'>document.alert('coulnd establish a connection with mysql...');</script>";	
+		
+		}
+
+		else {
+
+			echo "<script type='text/javascript'>document.alert(mysqli_get_host_info($link);</script>";
+		
+		
+		}
+
 	}
 
 
