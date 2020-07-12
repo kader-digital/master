@@ -16,6 +16,11 @@
 			die('connection failed. ');
 		
 		}
+		else {
+		
+			echo "<script type='text/javascript'>document.alert('we got you!!!')</script>";
+		
+		}
 
 	}
 
