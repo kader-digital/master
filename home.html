@@ -57,7 +57,25 @@
 				</table>
 			</div>
 			<br>
-			<form method="post" action="email-check.php">
+			<form method="post" action="">
+				<?php 
+				
+				    if (isset($_post['submit'])) {
+
+				        import "email-submit.php";
+
+					    $email = $_POST['email'];
+					    $fullname = $_POST['fullname'];
+
+					    connect();
+					    insertValues($email, $fullname);
+					    close();
+				   
+				   }
+							
+					
+					
+				?>
 				<h2 id="email-header">Email List</h2>
 				<div class="email-form">
 				    <fieldset>
