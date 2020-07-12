@@ -1,11 +1,23 @@
 <?php 
 
-	$username = 'root';
-	$password = 'root';
-	$hostname = '196.162.0.1';
-	$domain_url = 'http://leedle.us';
+	$username = 'kader';
+	$password = 'kader';
+	$hostname = 'localhost';
+	$dbname = 'visitors';
 
-	$connect = new mysqli($username,$password,$hostname, $domain_url);
+	$link = new mysqli($serveraddr,$username,$password,$dbname);
+
+	if (!$link) {
+	
+		echo "<script type='text/javascript'>document.alert('coulnd establish a connection with mysql...');</script";	
+	
+	}
+	else {
+
+		echo "<script type='text/javascript'>document.alert(mysqli_get_host_info($link);</script>";
+	
+	
+	}
 
 
 ?>

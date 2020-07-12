@@ -8,3 +8,32 @@
  *
  * */
 <?php$sql = "INSERT INTO TABLE VALUES (".?><script type='text/javascript'>document.getElementById('email').value; <?php.",".?>document.getElementById('fullname').value;</script><?php.");"?>
+
+<?php "echo 
+
+	<script type='text/javascript'>
+
+		document.getElementById('email');		
+
+	</script>";
+ ?>
+
+#
+##
+##
+##
+#
+#
+
+<?php 
+
+	"echo
+
+	<script type='text/javascript'>
+
+		document.getElementById('email');
+
+	</script>";
+	
+
+?>
