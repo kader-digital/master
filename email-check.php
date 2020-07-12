@@ -1,5 +1,7 @@
 <?php 
 
+import 'connection.php';
+
 // so now literally all we have to do is query mysql using the $link object from out connection and test our post objects against the other submitted fields in an array
 // so lets make an array that contains all of the mysql database table's email fields  
 
@@ -32,22 +34,27 @@ for (i = 0; i < emailList.length; i++) {
 	
 		if (subEmail == e) {
 		
-			".window.alert('email is already in the database. we sent you an email just to reconfirm.');"
+			echo ".window.alert('email is already in the database. we sent you an email just to reconfirm.');";
 		
 		}
-		else {
 		
-			// here is where to insert the 
-			// new fields for email and fullname
-			$sql = "INSERT VALUES(".$email.".','.".$fullname.")";	
-			$response = $query($sql);
-			import 'close.php';
+		// close the connection
+		// after inserting (and checking that the inserted data arrived safely)
+		import 'close.php';
 		    	
 		
-		}
 
 	}
 	
-}
+	// here is where to insert the 
+	// new fields for email and fullname
+	$sql = "INSERT VALUES(".$email.".','.".$fullname.")";	
+	$response = $query($sql);
 
+
+}
+	// close the connection
+	// after inserting (and checking that the inserted data arrived safely)
+	import 'close.php';
+	
 ?>
